@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.calculator {
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+input {
+    width:  50vh;
+    border: none;
+    padding: 24px;
+    margin: 10px 0;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+
+.equal{
+    color: orange;
+}
+.operator{
+      color: rgb(61, 202, 61);
+}
+.footer {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s ease-out forwards;
+    animation-delay: 1s;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 0 0 8px rgba(0, 255, 195, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: scale(1);
+}
+
+button:hover {
+    background: rgba(0, 255, 195, 0.08);
+    box-shadow: 0 0 15px #00ffc3, 0 0 30px #00ffc3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.92);
+    box-shadow: inset 0 0 10px #00ffc3,
+                inset 0 0 20px #00ffc3;
+}
